@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd
+	   		http://www.springframework.org/schema/context
+	   		http://www.springframework.org/schema/context/spring-context.xsd
+	   		http://www.springframework.org/schema/tx 
+			http://www.springframework.org/schema/tx/spring-tx.xsd
+			http://www.springframework.org/schema/mvc 
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- Spring MVC Annotation -->
+	<context:annotation-config />
+	<mvc:annotation-driven />
+ <bean id="ViewResolver"
+ p:prefix="/views/layout-dispatcher.jsp?view=" p:suffix=".jsp"
+ 	class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
+     <!-- -->
+     <bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="20971520" />
+	</bean>
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="465" />
+		<property name="username" value="hoangnguyen.cukuin@gmail.com" />
+		<property name="password" value="Hoangtien123" />
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.socketFactory.class">
+					javax.net.ssl.SSLSocketFactory
+				</prop>
+				<prop key="mail.smtp.socketFactory.port">465</prop>
+				<prop key="mail.smtp.starttls.enable">false</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+	<context:component-scan base-package="poly.controller" />
+		<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/admin-login.htm"/>
+			<mvc:mapping path="/logout.htm"/>
+			<mvc:mapping path="/editug/**"/>
+			<bean class="interceptor.SecurityInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/user.htm"/>
+			<mvc:mapping path="/admin/admin.htm"/>
+			<mvc:mapping path="/admin/sanpham.htm"/>
+			<mvc:mapping path="/admin/error.htm"/>
+			<mvc:mapping path="/khac/themsanpham.htm"/>
+			<mvc:mapping path="/khac/doitac.htm"/>
+			<mvc:mapping path="/khac/quyenhan.htm"/>
+			<mvc:mapping path="/tintuc/tintuc.htm"/>
+			<mvc:mapping path="/tintuc/tintucmoi.htm"/>
+			<mvc:mapping path="/admin/edit/**"/>
+			<mvc:mapping path="/admin/editu/**"/>
+			<mvc:mapping path="/admin/delete/**"/>
+			<mvc:mapping path="/admin/logout.htm"/>
+			<bean class="interceptor.SecurityInterceptorAdmin" />
+		</mvc:interceptor>
+
+	</mvc:interceptors>
+</beans>

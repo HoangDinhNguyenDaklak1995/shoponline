@@ -1,0 +1,485 @@
+@CHARSET "ISO-8859-1";
+/*====== SIDEBAR ======*/
+#sidebar {
+	overflow: hidden
+}
+
+.widget {
+	text-align: center;
+	color: hsl(0, 0%, 50%);
+	border-bottom: 1px solid hsl(0, 0%, 94%);
+	font-size: 16px;
+	border-radius: 3px;
+	padding: 1em;
+	padding: 34px 0;
+	display: block;
+}
+
+a.widget {
+	text-decoration: none
+}
+
+a.widget:hover {
+	text-decoration: none
+}
+
+.widget h2, .widget h3 {
+	font-family: 'Quicksand';
+	font-size: 2.5rem;
+	line-height: 0.95;
+	margin-bottom: 0.75em;
+	margin-top: 0;
+	color: hsl(0, 0%, 33%);
+	text-align: left;
+}
+
+.widget h2 span, .widget h3 span {
+	color: hsl(7, 84%, 39%)
+}
+
+.widget h2 span.highlight, .widget h3 span.highlight {
+	font-weight: bold
+}
+
+.widget h4 {
+	color: hsl(0, 0%, 33%);
+	text-align: left;
+}
+
+.widget p {
+	text-align: center
+}
+
+.widget .logo {
+	overflow: hidden;
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+.widget .logo img {
+	
+}
+
+.widget>.button:last-child {
+	margin-top: 19px
+}
+
+.widget>:last-child {
+	margin-bottom: 0 !important
+}
+/*-- Widget: Enterprise cluster --*/
+.widget.enterprise-cluster {
+	color: #fff;
+	background: hsl(7, 85%, 39%);
+	margin-bottom: 34px;
+}
+
+.widget.enterprise-cluster h3 {
+	font-size: 2em;
+	font-weight: 100;
+	color: inherit;
+	text-align: center;
+}
+
+.widget.enterprise-cluster h3 span.highlight {
+	display: block;
+	color: inherit;
+}
+
+.widget.enterprise-cluster p {
+	text-align: center;
+	line-height: 1.1;
+}
+
+.widget.enterprise-cluster .button {
+	background: #fff;
+	color: hsl(7, 85%, 39%);
+}
+/*-- Widget: Performance benchmark --*/
+.widget.performance-benchmark {
+	border: 1px solid hsl(7, 85%, 39%)
+}
+
+.widget.performance-benchmark h3 {
+	font-size: 3.3rem;
+	text-align: center;
+}
+
+.widget.performance-benchmark h3 span.highlight {
+	text-transform: uppercase; /*color: hsl(7, 85%, 39%);*/
+	font-weight: normal;;;
+}
+
+.widget.performance-benchmark p {
+	text-align: center
+}
+
+.widget.performance-benchmark h3+.logo {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.widget.performance-benchmark .button {
+	
+}
+/*-- Widget: Setup --*/
+.widget.setup {
+	
+}
+
+.widget.setup h3 {
+	text-align: center
+}
+
+.widget.setup .button {
+	font-family: Arial;
+	font-size: 1em;
+	width: 100%;
+	padding: 1.3em 0;
+	letter-spacing: normal;
+	margin-top: 0;
+	text-transform: none;
+	line-height: 1;
+}
+
+.widget.setup p:last-child {
+	font-size: 1.3rem;
+	color: hsl(0, 0%, 50%);
+	margin-top: 1em;
+}
+
+.widget.setup p:last-child span {
+	display: block
+}
+/*-- Widget: Links --*/
+.widget.links {
+	
+}
+
+.widget.links ul {
+	
+}
+
+.widget.links li {
+	text-align: left
+}
+
+.widget.links li a {
+	display: block;
+	flex-grow: 1;
+	color: hsl(0, 0%, 50%);
+	padding: 0.45em;
+}
+
+.widget.links li a:hover {
+	text-decoration: none
+}
+
+.widget.links li:hover {
+	
+}
+
+.widget.links li:hover a {
+	background-color: hsl(0, 0%, 98%)
+}
+/*-- Widget: Partners --*/
+.widget.partners {
+	
+}
+
+.widget.partners>a {
+	display: inline-block;
+	overflow: hidden;
+	border: 1px solid hsl(0, 0%, 94%);
+	border-radis: 3px;
+	margin-bottom: 22px;
+	background: hsl(0, 0%, 100%);
+}
+
+.widget.partners>a img {
+	
+}
+
+.widget.partners>a:hover {
+	background: hsl(0, 0%, 98%)
+}
+/*-- Widget: About --*/
+.widget.about {
+	text-align: left
+}
+
+.widget.about p {
+	text-align: left;
+	line-height: 1.5;
+}
+/*-- Widget: Highlight --*/
+/*.widget.highlight { }
+.widget.highlight > a { display: inline-block; overflow: hidden; border: 1px solid hsl(0, 0%, 94%); border-radius: 3px; margin-bottom: 22px; background: hsl(0, 0%, 100%); }
+.widget.highlight > a img { }
+.widget.highlight > a:hover { background: hsl(0, 0%, 98%) }*/
+/*-- Widget: Conferences --*/
+.widget.conferences {
+	
+}
+
+.widget.conferences>ul {
+	display: block;
+	margin: 0;
+}
+
+.widget.conferences>ul>li {
+	padding: 34px 0px;
+	display: block;
+	border-bottom: 1px solid hsl(0, 0%, 94%);
+	border-radius: 3px;
+	overflow: hidden;
+	background: hsl(0, 0%, 100%);
+}
+
+.widget.conferences>ul>li>a, .widget.conferences>ul>li>div {
+	border: 1px solid hsl(0, 0%, 94%);
+	border-radius: 3px;
+	display: inline-block;
+	overflow: hidden;
+	background: hsl(0, 0%, 100%);
+}
+
+.widget.conferences>ul>li>a img, .widget.conferences>ul>li>div img {
+	
+}
+
+.widget.conferences>ul>li>a:hover, .widget.conferences>ul>li>div:hover {
+	background: hsl(0, 0%, 98%)
+}
+
+.widget.conferences>ul>li:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.widget.conferences>ul>li:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+/*-- Widget: Video --*/
+.widget.video {
+	
+}
+
+.widget.video .logo {
+	max-width: 260px;
+	margin-bottom: 15px;
+}
+
+.widget.video h3 {
+	text-align: center;
+	font-size: 2.7rem;
+}
+
+.widget.video>a {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.widget.video>a img {
+	height: 100%
+}
+/*-- Widget: Prodcuts --*/
+.widget.prodcuts {
+	
+}
+
+.widget.prodcuts ul {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.widget.prodcuts li {
+	align-items: flex-start
+}
+
+.widget.prodcuts li a {
+	opacity: 0.63;
+	height: 100%;
+}
+
+.widget.prodcuts li img {
+	height: 34px
+}
+
+.widget.prodcuts li a:hover {
+	opacity: 1
+}
+/*-- Widget: Service --*/
+.widget.service {
+	
+}
+
+.widget.service .logo {
+	margin-bottom: 14px;
+	border-radius: 50%;
+}
+
+.widget.service .logo img {
+	width: 53px
+}
+
+.widget.service h3 {
+	text-align: center
+}
+
+.widget.service h3 span { /*color: hsl(7, 84%, 39%);*/
+	
+}
+
+.widget.service.memcached {
+	
+}
+
+.widget.service.memcached h3 span {
+	color: hsl(145, 60%, 39%)
+}
+
+.widget.service p {
+	
+}
+/*-- Widget: News --*/
+.widget.news {
+	
+}
+
+.widget.news {
+	
+}
+
+.widget.news {
+	
+}
+/*-- Widget: Plugin --*/
+.widget.plugin {
+	
+}
+
+.widget.plugin {
+	
+}
+
+.widget.plugin {
+	
+}
+/*-- Widget: Contact --*/
+.widget.contact {
+	
+}
+
+.widget.contact h3 {
+	font-size: 3.2rem
+}
+
+.widget.contact h4 {
+	font-size: 2.6rem
+}
+
+.widget.contact h4 span {
+	font-family: Arial;
+	text-transform: none;
+	letter-spacing: normal;
+	display: block;
+	font-size: 0.75em;
+}
+
+.widget.contact h4+div {
+	text-align: left
+}
+
+.widget.contact h4+div>* {
+	display: block;
+	line-height: 1;
+	padding: 0.4em;
+}
+/*-- Widget: Author --*/
+.widget.author {
+	
+}
+
+.widget.author .card {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+	font-family: Quicksand;
+}
+
+.widget.author .card .thumbnail {
+	width: 25%;
+	margin: 0;
+	display: flex;
+	overflow: hidden;
+}
+
+.widget.author .card .thumbnail.ratio-square {
+	padding-bottom: 25%
+}
+
+.widget.author .card .thumbnail img {
+	width: 100%
+}
+
+.widget.author .card .info {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+}
+
+.widget.author .card h4 {
+	color: hsl(207, 54%, 69%);
+	margin: 0;
+	font-size: 2rem;
+}
+
+.widget.author .card h4 span {
+	display: block;
+	color: hsl(0, 0%, 0%);
+	font-size: 0.7em;
+	text-transform: capitalize;
+	margin-top: 0.2em;
+}
+
+.widget.author .card+p {
+	text-align: left;
+	margin-top: 0.3em;
+}
+/*-- Widget: Newsletter --*/
+.widget.newsletter {
+	background-color: hsl(0, 68%, 96%);
+	padding: 2.0em 2.4em 0.3em 2.4em;
+}
+
+.widget.newsletter h3 {
+	
+}
+
+.widget.newsletter form {
+	text-align: left
+}
+
+.widget.newsletter form p {
+	text-align: left;
+	font-size: 0.8em;
+}
+
+.widget.newsletter form input {
+	width: 100%
+}
+
+.widget.newsletter form button {
+	width: 100%
+}
+
+.widget.newsletter form button+a {
+	display: inline-block;
+	padding: 1.5em;
+	padding-left: 0;
+}

@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//WebContent/views/blog2.jsp=UTF-8
+encoding//WebContent/views/detail.jsp=UTF-8
+encoding//WebContent/views/index.jsp=UTF-8
+encoding//src/poly/controller/AccountR.java=UTF-8
+encoding//src/poly/controller/HomeController.java=UTF-8
+encoding//src/poly/controller/MailerController.java=UTF-8
+encoding//src/poly/controller/MaillerController.java=UTF-8
+encoding//src/poly/controller/adminController.java=UTF-8
+encoding//src/poly/controller/home.java=UTF-8
+encoding//src/poly/controller/khacController.java=UTF-8
+encoding//src/poly/controller/sanphamcontroller.java=UTF-8
+encoding//src/poly/controller/tintuccontroller.java=UTF-8
+encoding//src/poly/entity/BinhLuan.java=UTF-8
+encoding//src/recaptcha/PreQueryString.java=UTF-8
